@@ -1,0 +1,506 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shane | Personal Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+
+    <div class="logo">
+        <span>S</span>
+        <h2>SHANE<span>.</span></h2>
+    </div>
+
+    <div class="sidebar-profile">
+        <img src="profile picture.jpg" alt="my profile">
+        <h3>Shane P. Tapia</h3>
+        <p>IT Student</p>
+    </div>
+
+    <p class="menu-label">MAIN MENU</p>
+
+    <nav>
+        <button class="nav-btn active" onclick="showPage('home', this)">
+            <span>⌂</span> Home
+        </button>
+
+        <button class="nav-btn" onclick="showPage('about', this)">
+            <span>♙</span> About Me
+        </button>
+
+        <button class="nav-btn" onclick="showPage('education', this)">
+            <span>▤</span> Education
+        </button>
+
+        <button class="nav-btn" onclick="showPage('skills', this)">
+            <span>✧</span> My Skills
+        </button>
+
+        <button class="nav-btn" onclick="showPage('games', this)">
+            <span>⌘</span> Java Games
+        </button>
+
+        <button class="nav-btn" onclick="showPage('contact', this)">
+            <span>✉</span> Contact
+        </button>
+    </nav>
+
+    <div class="sidebar-footer">
+        <p>MY PERSONAL PORTFOLIO</p>
+        <span>© 2026 Shane</span>
+    </div>
+
+</aside>
+
+<!-- MAIN CONTENT -->
+<main class="main-content">
+
+    <!-- HOME -->
+    <section id="home" class="page active">
+
+        <div class="top-heading">
+            <div>
+                <p class="small-title">WELCOME TO MY WORLD</p>
+                <h1>Personal <span>Portfolio</span></h1>
+            </div>
+            <div class="online-status">
+                <span></span> Available to Learn
+            </div>
+        </div>
+
+        <div class="hero-card">
+
+            <div class="hero-text">
+                <p class="hero-label">HELLO, I'M</p>
+
+                <h1>Shane P.<br><span>Tapia</span></h1>
+
+                <h3>Bachelor of Science in Information Technology</h3>
+
+                <p class="hero-description">
+                    I am a first-year IT student who enjoys learning
+                    about technology, programming, and website development.
+                    Welcome to my personal portfolio!
+                </p>
+
+                <button class="primary-btn"
+                    onclick="showPage('about', document.querySelectorAll('.nav-btn')[1])">
+                    Discover More →
+                </button>
+            </div>
+
+            <div class="hero-image">
+                <div class="image-glow"></div>
+                <img src="profile picture.jpg" alt="Shane's Profile">
+                <div class="image-caption">
+                    <span>✦</span> IT STUDENT
+                </div>
+            </div>
+
+        </div>
+
+        <div class="home-bottom">
+
+            <div class="mini-card">
+                <span class="mini-icon">01</span>
+                <h3>About Me</h3>
+                <p>Get to know me and my interests.</p>
+            </div>
+
+            <div class="mini-card">
+                <span class="mini-icon">02</span>
+                <h3>Education</h3>
+                <p>Explore my educational journey.</p>
+            </div>
+
+            <div class="mini-card">
+                <span class="mini-icon">03</span>
+                <h3>My Skills</h3>
+                <p>Discover what I am learning.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="page">
+
+        <div class="section-heading">
+            <p class="small-title">GET TO KNOW ME</p>
+            <h1>About <span>Me</span></h1>
+            <p>A little introduction about myself.</p>
+        </div>
+
+        <div class="about-layout">
+
+            <div class="about-photo card">
+                <img src="profile picture.jpg" alt="Shane">
+                <h2>Shane P. Tapia</h2>
+                <p>Information Technology Student</p>
+            </div>
+
+            <div class="about-details card">
+
+                <h2>Personal Information</h2>
+
+                <div class="detail-row">
+                    <span>Full Name</span>
+                    <strong>Shane P. Tapia</strong>
+                </div>
+
+                <div class="detail-row">
+                    <span>Course</span>
+                    <strong>BS Information Technology</strong>
+                </div>
+
+                <div class="detail-row">
+                    <span>Year Level</span>
+                    <strong>First Year</strong>
+                </div>
+
+                <div class="detail-row">
+                    <span>School</span>
+                    <strong>Our Lady of the Sacred Heart</strong>
+                </div>
+
+                <div class="about-description">
+                    <h3>Who Am I?</h3>
+
+                    <p>
+                        I am a student who is interested in learning
+                        programming and creating websites.
+                    </p>
+
+                    <p>
+                        My goal is to improve my knowledge and skills
+                        in technology and become a successful person
+                        in the future.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="page">
+
+        <div class="section-heading">
+            <p class="small-title">MY LEARNING JOURNEY</p>
+            <h1>Educational <span>Background</span></h1>
+            <p>My academic journey from elementary to college.</p>
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-number">01</div>
+                <div class="timeline-content card">
+                    <span class="year">2019</span>
+                    <h2>Elementary</h2>
+                    <h3>Nagpandayan Elementary School</h3>
+                    <p>Year Graduated: 2019</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-number">02</div>
+                <div class="timeline-content card">
+                    <span class="year">2024</span>
+                    <h2>Junior High School</h2>
+                    <h3>Nagpandayan National High School</h3>
+                    <p>Year Graduated: 2024</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-number">03</div>
+                <div class="timeline-content card">
+                    <span class="year">2026</span>
+                    <h2>Senior High School</h2>
+                    <h3>Nagpandayan National High School</h3>
+                    <p>Strand: HUMSS</p>
+                    <p>Year Graduated: 2026</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-number">04</div>
+                <div class="timeline-content card">
+                    <span class="year">PRESENT</span>
+                    <h2>College</h2>
+                    <h3>Our Lady of the Sacred Heart</h3>
+                    <p>Course: Bachelor of Science in Information Technology</p>
+                    <p>Status: First Year</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="page">
+
+        <div class="section-heading">
+            <p class="small-title">WHAT I CAN DO</p>
+            <h1>My <span>Skills</span></h1>
+            <p>Skills and abilities that I continue to develop.</p>
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card card">
+                <div class="skill-top">
+                    <h2>HTML</h2>
+                    <span>80%</span>
+                </div>
+                <p>Website Structure</p>
+                <div class="progress">
+                    <div class="progress-fill html-fill"></div>
+                </div>
+            </div>
+
+            <div class="skill-card card">
+                <div class="skill-top">
+                    <h2>CSS</h2>
+                    <span>70%</span>
+                </div>
+                <p>Website Design</p>
+                <div class="progress">
+                    <div class="progress-fill css-fill"></div>
+                </div>
+            </div>
+
+            <div class="skill-card card">
+                <div class="skill-top">
+                    <h2>Java</h2>
+                    <span>60%</span>
+                </div>
+                <p>Programming</p>
+                <div class="progress">
+                    <div class="progress-fill java-fill"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="other-skills card">
+            <h2>Other Skills</h2>
+
+            <div class="skill-tags">
+                <span>Computer Skills</span>
+                <span>Creativity</span>
+                <span>Problem Solving</span>
+                <span>Communication Skills</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- GAMES -->
+    <section id="games" class="page">
+
+        <div class="section-heading">
+            <p class="small-title">MY PROGRAMMING ACTIVITY</p>
+            <h1>Java <span>Quiz Game</span></h1>
+            <p>A Java programming activity created for learning.</p>
+        </div>
+
+        <div class="game-intro card">
+            <div>
+                <span class="game-label">JAVA SOURCE CODE</span>
+                <h2>Quiz Game Program</h2>
+                <p>
+                    This program contains five questions about
+                    HTML, CSS, CPU, programming languages, and Java.
+                </p>
+            </div>
+            <div class="game-symbol">J</div>
+        </div>
+
+        <div class="code-container">
+            <div class="code-header">
+                <div class="code-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <p>QuizGame.java</p>
+                <span class="language-label">JAVA</span>
+            </div>
+
+<pre><code>import java.util.Scanner;
+
+public class QuizGame {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        String[] questions = {
+            "1. What does HTML stand for?",
+            "2. Which language is used for styling websites?",
+            "3. What does CPU stand for?",
+            "4. Which one is a programming language?",
+            "5. What does Java use to display output?"
+        };
+
+        String[][] choices = {
+            {"A. Hyper Text Markup Language",
+             "B. High Text Machine Language",
+             "C. Home Tool Markup Language"},
+
+            {"A. Java", "B. CSS", "C. Python"},
+
+            {"A. Central Processing Unit",
+             "B. Computer Personal Unit",
+             "C. Central Program Utility"},
+
+            {"A. HTML", "B. CSS", "C. Java"},
+
+            {"A. System.out.println()",
+             "B. input()",
+             "C. display()"}
+        };
+
+        char[] answers = {'A', 'B', 'A', 'C', 'A'};
+
+        int score = 0;
+
+        System.out.println("==============================");
+        System.out.println("       JAVA QUIZ GAME");
+        System.out.println("==============================");
+
+        for (int i = 0; i < questions.length; i++) {
+
+            System.out.println("\\n" + questions[i]);
+
+            for (String choice : choices[i]) {
+                System.out.println(choice);
+            }
+
+            System.out.print("Your answer: ");
+
+            char answer = Character.toUpperCase(
+                input.next().charAt(0)
+            );
+
+            if (answer == answers[i]) {
+                System.out.println("Correct!");
+                score++;
+            } else {
+                System.out.println("Wrong!");
+            }
+        }
+
+        System.out.println("\\nYOUR QUIZ RESULT");
+        System.out.println("Your Score: " + score
+            + "/" + questions.length);
+
+        if (score >= 4) {
+            System.out.println("Excellent work!");
+        } else if (score >= 3) {
+            System.out.println("Good job!");
+        } else {
+            System.out.println("Keep practicing!");
+        }
+
+        input.close();
+    }
+}</code></pre>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="page">
+
+        <div class="section-heading">
+            <p class="small-title">LET'S CONNECT</p>
+            <h1>Contact <span>Me</span></h1>
+            <p>Here is my contact information.</p>
+        </div>
+
+        <div class="contact-card card">
+
+            <div class="contact-icon">✉</div>
+
+            <h2>Get In Touch</h2>
+
+            <div class="contact-detail">
+                <span>NAME</span>
+                <p>Shane P. Tapia</p>
+            </div>
+
+            <div class="contact-detail">
+                <span>EMAIL ADDRESS</span>
+                <p>tapiashanepapa@gmail.com</p>
+            </div>
+
+            <div class="contact-detail">
+                <span>CONTACT NUMBER</span>
+                <p>09466279857</p>
+            </div>
+
+            <div class="contact-thanks">
+                Thank you for visiting my portfolio!
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Shane's Personal Portfolio</p>
+        <p>Designed with creativity by Shane</p>
+    </footer>
+
+</main>
+
+<!-- JAVASCRIPT -->
+<script>
+
+function showPage(pageId, button) {
+
+    const pages = document.querySelectorAll(".page");
+
+    pages.forEach(function(page) {
+        page.classList.remove("active");
+    });
+
+    document.getElementById(pageId).classList.add("active");
+
+    const buttons = document.querySelectorAll(".nav-btn");
+
+    buttons.forEach(function(btn) {
+        btn.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+</script>
+
+</body>
+</html>
